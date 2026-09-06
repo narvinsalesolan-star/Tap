@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TapCard Demo</title>
+  <meta name="description" content="Standalone TapCard digital business card demo" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">T</div>
+        <div>
+          <strong>TapCard</strong>
+          <span>Digital Business Card</span>
+        </div>
+      </div>
+      <button id="shareBtn" class="ghost-btn">Share</button>
+    </header>
+
+    <main class="card-wrap">
+      <section class="card">
+        <div class="cover">
+          <div class="cover-overlay"></div>
+          <div class="cover-copy">
+            <span class="eyebrow">Connect Smarter</span>
+            <h2>People.<br>Business.<br>Opportunities.</h2>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="avatar" aria-label="Profile placeholder">JS</div>
+
+          <div class="identity">
+            <h1>John Smith</h1>
+            <p class="role">Procurement Engineer</p>
+            <p class="company">ABC Company</p>
+          </div>
+
+          <p class="bio">
+            Building sustainable supply chains for a better tomorrow.
+          </p>
+
+          <div class="quick-actions">
+            <a class="action-btn primary" href="tel:+97400000000">Call</a>
+            <a class="action-btn secondary" href="mailto:john@example.com">Email</a>
+            <a class="action-btn whatsapp" href="https://wa.me/97400000000" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+
+          <button id="saveContactBtn" class="save-btn">Save Contact</button>
+
+          <div class="socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social">in</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social">◎</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social">f</a>
+            <a href="https://example.com" target="_blank" rel="noopener" class="social">↗</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="label">Phone</span>
+              <a href="tel:+97400000000">+974 0000 0000</a>
+            </div>
+            <div class="info-item">
+              <span class="label">Email</span>
+              <a href="mailto:john@example.com">john@example.com</a>
+            </div>
+            <div class="info-item">
+              <span class="label">Website</span>
+              <a href="https://example.com" target="_blank" rel="noopener">example.com</a>
+            </div>
+            <div class="info-item">
+              <span class="label">Location</span>
+              <span>Doha, Qatar</span>
+            </div>
+          </div>
+
+          <div class="qr-panel">
+            <div class="qr-placeholder">
+              <div class="qr-grid" aria-hidden="true"></div>
+            </div>
+            <div>
+              <strong>Scan to open profile</strong>
+              <p>Use this area for your dynamic QR code.</p>
+            </div>
+          </div>
+
+          <div class="footer-note">
+            <span>Let's connect and create opportunities.</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="demo-panel">
+        <h3>Standalone Demo</h3>
+        <p>
+          This page is built with plain HTML, CSS, and JavaScript. No framework or backend is required.
+        </p>
+
+        <div class="feature-list">
+          <div>✓ Responsive mobile card</div>
+          <div>✓ Call, email and WhatsApp buttons</div>
+          <div>✓ Save contact as vCard</div>
+          <div>✓ Native share button with fallback</div>
+          <div>✓ Ready for HTTPS hosting</div>
+        </div>
+
+        <div class="deploy-box">
+          <strong>Deploy options</strong>
+          <span>Vercel</span>
+          <span>Netlify</span>
+          <span>GitHub Pages</span>
+          <span>Cloudflare Pages</span>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
